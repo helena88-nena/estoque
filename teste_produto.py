@@ -23,8 +23,14 @@ p3.preco = 10
 p3.tipo = "fruta"
 p3.codigo = 95447
 
-print(f"{p1.nome}: {p1.quantidade} un.")
-print(f"{p2.nome}: {p2.quantidade} un.")
-print(f"{p3.nome}: {p3.quantidade} un.")
+print(p1.listar_produtos())
+p1.entrada(30)
+print(p1.listar_produtos())
 
-
+p1.saida(15)
+print(p1.listar_produtos())
+if p1.saida(100):
+    print("saida registrada")
+else:
+    print("saida recusada")
+print(p1.quantidade)
